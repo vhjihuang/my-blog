@@ -1,4 +1,7 @@
-import { defineUserConfig } from 'vuepress'
+const navbar = require('./vuepressConfig/navbar')
+const sidebar = require('./vuepressConfig/sidebar')
+
+import { defineUserConfig, defaultTheme } from 'vuepress'
 
 export default defineUserConfig({
   lang: 'zh-CN',
@@ -9,5 +12,9 @@ export default defineUserConfig({
     code: {
       lineNumbers: false
     }
-  }
+  },
+  theme: defaultTheme({
+    navbar,
+    sidebar
+  })
 })
