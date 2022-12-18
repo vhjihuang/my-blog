@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.59">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <title> | Welcome My Blog</title><meta name="description" content="Welcome My Blog">
+    <link rel="preload" href="/my-blog/assets/style-e7f091d5.css" as="style"><link rel="stylesheet" href="/my-blog/assets/style-e7f091d5.css">
+    <link rel="modulepreload" href="/my-blog/assets/app-4bbb5f76.js"><link rel="modulepreload" href="/my-blog/assets/framework-8fa3e4ce.js"><link rel="modulepreload" href="/my-blog/assets/404.html-91dc2652.js"><link rel="modulepreload" href="/my-blog/assets/404.html-f9875e7b.js"><link rel="prefetch" href="/my-blog/assets/index.html-95337c37.js" as="script"><link rel="prefetch" href="/my-blog/assets/buildBlog.html-8719ff42.js" as="script"><link rel="prefetch" href="/my-blog/assets/index.html-fa5ffec0.js" as="script"><link rel="prefetch" href="/my-blog/assets/buildBlog.html-2d09f2d7.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><main class="page"><div class="theme-default-content"><h1>404</h1><blockquote>How did we get here?</blockquote><a href="/my-blog/" class="">Take me home</a></div></main></div><!----><!--]--></div>
+    <script type="module" src="/my-blog/assets/app-4bbb5f76.js" defer></script>
+  </body>
+</html>
